@@ -15,14 +15,14 @@
 <body>
     <header>
         <div class="top-header">
-            <div class= "logo-busqueda">
-                <div id="logo">
-                    <img src="/images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre">
-                </div>
-                <div class="form" action="#" method="GET">
-                    <div class="input">Buscar productos, marcas y más</div>
-                    <div class="submit"><i class="fa fa-search"></i></div>
-                </div>
+            <div id="logo">
+                <img src="/images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre">
+            </div>
+            <div class="form">
+                <form class="nav-search"   action="#"  method="post">
+                    <input type="text"   placeholder="Buscar productos, marcas y más">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
             </div>
             <h4 class="cuotas-header"><i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito</h4>
         </div>
@@ -45,47 +45,51 @@
             <a href="#"><i class="fa fa-bars burger"></i></a>
         </div>
     </header>
-    <form action="/register" method="post">
+    <main  class="register">
+        <form action="/register" method="post">
 
-        <label for="txfName">Nombre y Apellido</label>
-        <input type="" name="name-lastname" id="txfName">
-        <br>
-        <br>
-        <label for="txfUser">Usuario</label>
-        <input type="" name="user" id="txfUser">
-        <br>
-        <br>
-        <label for="txfEmail">Email</label>
-        <input type="email" name="email" id="txfEmail">
-        <br>
-        <br>
-        <label for="txfDate">Fecha de Nacimiento</label>
-        <input type="date" name="fecha" value="2023-10-02" min="1988-01-01" max="2023-10-02" id="txfDate">
-        <br>
-        <br>
-        <label for="txfDirection">Direccion</label>
-        <input type="" name="direction" id="txfDirection">
-        <br>
-        <br>
-        <label for="txfPassword">Contraseña</label>
-        <input type="password" name="password" id="txfPassword">
-        <br>
-        <br>
-        <label for="txfPasswordConf">Confirmar Contraseña</label>
-        <input type="password" name="confirmedPassword" id="txfPasswordConf">
-        <br>
-        <br>
+            <br>
+            <label for="txfName"></label>
+            <input type="text" name="name-lastname" id="txfName"  placeholder="Nombre y Apellido">
+            <br>
+            <br>
+            <label for="txfUser"></label>
+            <input type="text" name="user" id="txfUser"  placeholder="Nombre de Usuario">
+            <br>
+            <br>
+            <label for="txfEmail"></label>
+            <input type="email" name="email" id="txfEmail"  placeholder="Email">
+            <br>
+            <br>
+            <label for="txfDate">Fecha de Nacimiento</label>
+            <input type="date" name="fecha" value="2023-10-02" min="1988-01-01" max="2023-10-02" id="txfDate">
+            <br>
+            <br>
+            <label for="txfDirection"></label>
+            <input type="text" name="direction" id="txfDirection"  placeholder="Direccion">
+            <br>
+            <br>
+            <label for="txfPassword"></label>
+            <input type="password" name="password" id="txfPassword"  placeholder="Contraseña">
+            <br>
+            <br>
+            <label for="txfPasswordConf"></label>
+            <input type="password" name="confirmedPassword" id="txfPasswordConf"  placeholder="Confirmar Contraseña">
+            <br>
+            <br>
 
-        <button type="submit">Crear Cuenta</button>
-        <button type="reset">Borrar Formulario</button>
+            <button type="submit"  class="create">Crear Cuenta</button>
+            <button type="reset"  class="reset">Borrar Formulario</button>
 
-        
-        
+            <br>
+            <br>
+            
 
 
 
 
-    </form>
+        </form>
+    </main>
 </body>
 <footer>
     <i id="icons" class="fas fa-credit-card"></i>

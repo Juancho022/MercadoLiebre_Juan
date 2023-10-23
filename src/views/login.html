@@ -15,14 +15,14 @@
 <body>
     <header>
         <div class="top-header">
-            <div class= "logo-busqueda">
-                <div id="logo">
-                    <img src="/images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre">
-                </div>
-                <div class="form" action="#" method="GET">
-                    <div class="input">Buscar productos, marcas y más</div>
-                    <div class="submit"><i class="fa fa-search"></i></div>
-                </div>
+            <div id="logo">
+                <img src="/images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre">
+            </div>
+            <div class="form">
+                <form class="nav-search"   action="#"  method="post">
+                    <input type="text"   placeholder="Buscar productos, marcas y más">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
             </div>
             <h4 class="cuotas-header"><i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito</h4>
         </div>
@@ -45,20 +45,25 @@
             <a href="#"><i class="fa fa-bars burger"></i></a>
         </div>
     </header>
-    <form action="/login" method="post">
+    <main class="login">
+        <form action="/login" method="post">
 
-        <label for="txfUser">Usuario</label>
-        <input type="" name="user" id="txfUser">
-        <br>
-        <br>
-        <label for="txfPassword">Contraseña</label>
-        <input type="password" name="password" id="txfPassword">
-        <br>
-        <br>
-        <button type="submit">Enviar</button>
+            <br>
+            <label for="txfUser"></label>
+            <input type="text" name="user" id="txfUser" placeholder="Nombre de Usuario">
+            <br>
+            <br>
+            <label for="txfPassword"></label>
+            <input type="password" name="password" id="txfPassword" placeholder="Contraseña">
+            <br>
+            <br>
+            <button type="submit">Enviar</button>
+            <br>
+            <br>
 
 
-    </form>
+        </form>
+    </main>
 </body>
 <footer>
     <i id="icons" class="fas fa-credit-card"></i>

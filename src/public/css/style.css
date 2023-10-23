@@ -15,22 +15,51 @@
     font-size: 12px;
   }
   
-  div.top-header {
-    padding: 5%;
+  header div.top-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 8px;
   }
   
   header {
     background-color: #eac926;
-    
   }
   
-  header div.logo {
+  header #logo {
     width: 50%;
   }
   
-  header div.logo {
-    padding: 10px;
+  header div.top-header div.form {
+    width: 50%;
+    display: flex;
   }
+
+  header div.top-header div.form .nav-search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-self: center;
+  }
+
+  header div.top-header div.form .nav-search input {
+    width: 85%;
+    border-radius: 5px;
+    padding: 5px;
+    height: 24px;
+    border: none;
+    color: #666;
+    background-color: #fff;
+  }
+
+  header div.top-header div.form .nav-search button {
+    width: 15%;
+    height: 24px;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+
   header nav {
     font-size: 12px;
   }
@@ -87,10 +116,8 @@
     padding-bottom: 5px;
     border-top: 1px solid #ebebeb;
     margin: auto;
-    
   }
 
-  
   .price {
     font-size: 18px;
     display: flex;
@@ -114,8 +141,6 @@
     padding-left: 8%;
     display: flex;
     flex-direction: row;
-    
-
   }
  
 
@@ -142,9 +167,7 @@
   
   main section article {
     background-color: #fff;
-    margin: 15px;
-    
-    
+    margin: 15px; 
   }
   
   main section article img {
@@ -155,18 +178,6 @@
   .discount {
     color: #39b54a;
   }
-
-#logo { 
-    width: 50%;
-    height: 50px;
-    display: flex;
-    flex-grow: 1;
-}
-
-.form {
-  display: flex;
-  flex-grow: 1;
-}
 
 .product_img{
     width: 100%; 
@@ -183,7 +194,6 @@ footer{
     font-family: "Roboto", sans-serif;
     background-color: #fff;
     color: #666;
-    
 }
 
 footer div{
@@ -216,18 +226,6 @@ footer p {
     opacity: .6;
 }
 
-.logo-busqueda  {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-
-}
-
-.form {
-  display: flex;
-  flex-direction: row;
-  
-}
 
 .main-article > .fa-truck{
     display: block;
@@ -248,12 +246,53 @@ footer p {
 }
 
 main.login form button {
-  transition: color, background-color 300ms;
-}
-
-main.login form button:hover {
   background-color: #0022AA;
   color: #ffffff;
+  width: 85%;
+  height: 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  max-width: 450px;
+}
+
+main.login form #txfUser, main.login form #txfPassword {
+    width: 85%;
+    border-radius: 5px;
+    padding: 15px;
+    height: 24px;
+    border: none;
+    color: #666;
+    background-color: #fff;
+    max-width: 450px;
+}
+
+main.register form input {
+    width: 85%;
+    border-radius: 5px;
+    padding: 15px;
+    height: 24px;
+    border: none;
+    color: #666;
+    background-color: #fff;
+    max-width: 450px;
+}
+
+main.register form button {
+    width: 85%;
+    border-radius: 5px;
+    border: none;
+    max-width: 450px;
+}
+
+main.register form .create {
+  background-color:#0022AA ;
+  color: #fff;
+}
+
+main.register form .reset {
+  background-color: #000;
+  color: #fff;
 }
 
 
@@ -271,20 +310,15 @@ main.login form button:hover {
     display: none;
   }
   main section article{
-    width: 85%;
-    box-shadow: none;
     transition: box-shadow 300ms;
     cursor: pointer;
   }
-
   main section article:hover{
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
   }
-
   main section article:hover .fa-truck {
     transition: transform 300ms;
   }
-
   main section article:hover .fa-truck{
     transform: rotate(-90deg);
   }
@@ -300,10 +334,11 @@ main.login form button:hover {
     display: flex;
     justify-content: space-between;
   }
-  
   .cuotas-header{
-    max-width: 350px;
+    width: 33%;
     text-align: right;
+    align-items: center;
+    align-self: center;
   }
   .main-navbar{
     display: flex;
@@ -313,11 +348,7 @@ main.login form button:hover {
     display: flex;
   }
   .main-navbar li {
-    margin: 0 5px;
-  }
-  main section article{
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    
+    margin: 0 16px;
   }
   main section article .description {
     display: none;
@@ -326,27 +357,28 @@ main.login form button:hover {
     display: block;
   }
   main section article{
-    width: 44%;
-    box-shadow: none;
+    width: 43%;
     transition: box-shadow 300ms;
     cursor: pointer;
   }
-
   main section article:hover{
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
   }
-
   main section article:hover .fa-truck {
     transition: transform 300ms;
   }
-
   main section article:hover .fa-truck{
     transform: rotate(-90deg);
   }
-
   .products {
-    display: flex;
-    flex-wrap: wrap;
+    
+  }
+  header #logo {
+    width: 33%;
+  }
+  header div.top-header div.form {
+    width: 33%;
+    padding: 10px;
   }
 }  
 
@@ -375,6 +407,18 @@ main.login form button:hover {
   .products {
     display: flex;
     justify-content: center;
+  }
+
+  .main-navbar li {
+    margin: 0 50px;
+  }
+
+  main.login form #txfUser, main.login form #txfPassword, main.login form button {
+    max-width: 700px;
+  }
+
+  main.register form input, main.register form input {
+    max-width: 700px;
   }
 
 }
