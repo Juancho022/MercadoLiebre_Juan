@@ -50,35 +50,60 @@
 
             <br>
             <label for="txfName"></label>
-            <input type="text" name="name-lastname" id="txfName"  placeholder="Nombre y Apellido">
+            <input class="input-to-fill"   type="text" name="name-lastname" id="txfName"  placeholder="Nombre y Apellido"  required  minlength="4" maxlength="30">
             <br>
             <br>
             <label for="txfUser"></label>
-            <input type="text" name="user" id="txfUser"  placeholder="Nombre de Usuario">
+            <input  class="input-to-fill"  type="text" name="user" id="txfUser"  placeholder="Nombre de Usuario"  required minlength="4"  maxlength="30">
             <br>
             <br>
             <label for="txfEmail"></label>
-            <input type="email" name="email" id="txfEmail"  placeholder="Email">
+            <input class="input-to-fill"   type="email" name="email" id="txfEmail"  placeholder="Email"  required>
             <br>
             <br>
             <label for="txfDate">Fecha de Nacimiento</label>
-            <input type="date" name="fecha" value="2023-10-02" min="1988-01-01" max="2023-10-02" id="txfDate">
+            <br>
+            <input  class="input-to-fill"   type="date" name="fecha" value="2023-10-02" min="1988-01-01" max="2023-10-02" id="txfDate">
             <br>
             <br>
             <label for="txfDirection"></label>
-            <input type="text" name="direction" id="txfDirection"  placeholder="Direccion">
+            <input  class="input-to-fill"   type="text" name="direction" id="txfDirection"  placeholder="Direccion"  required  minlength="8"  min="1">
             <br>
             <br>
             <label for="txfPassword"></label>
-            <input type="password" name="password" id="txfPassword"  placeholder="Contraseña">
+            <input  class="input-to-fill"   type="password" name="password" id="txfPassword"  placeholder="Contraseña"  required  minlength="8" min="1">
             <br>
             <br>
             <label for="txfPasswordConf"></label>
-            <input type="password" name="confirmedPassword" id="txfPasswordConf"  placeholder="Confirmar Contraseña">
+            <input  class="input-to-fill"   type="password" name="confirmedPassword" id="txfPasswordConf"  placeholder="Confirmar Contraseña"  required  minlength="8" min="1">
             <br>
             <br>
-
+            <label>Ingrese su foto de Usuario:</label>
+            <input type="file"  name="avatar"  accept=".jpg" >
+            <br>
+            <br>
+            <div>Perfil de Usuario</div>
+            <br>
+            <input class="only-choice"  type="radio"   name="perfil-de-usuario"  value="Comprador" />Comprador
+            <input  class="only-choice"   type="radio"   name="perfil-de-usuario"  value="Vendedor" />Vendedor
+            <br>
+            <br>
+            <div>Categorias:</div>
+            <br>
+            <input  class="multiple-choice"   type="checkbox"   name="categorias-de-interes"  value="Electro" />Electro
+            <br>
+            <input  class="multiple-choice"   type="checkbox"   name="categorias-de-interes"  value="Moda" />Moda
+            <br>
+            <input  class="multiple-choice"  type="checkbox"   name="categorias-de-interes"  value="Hogar" />Hogar
+            <br>
+            <input  class="multiple-choice"  type="checkbox"   name="categorias-de-interes"  value="Jugueteria" />Jugueteria
+            <br>
+            <input class="multiple-choice" type="checkbox"   name="categorias-de-interes"  value="Vida Sana " />Vida Sana
+            <br>
+            <br>
             <button type="submit"  class="create">Crear Cuenta</button>
+            <br>
+            
             <button type="reset"  class="reset">Borrar Formulario</button>
 
             <br>
@@ -92,26 +117,34 @@
     </main>
 </body>
 <footer>
+    <article>
+    <section>
     <i id="icons" class="fas fa-credit-card"></i>
-        <div><b>Pagá con tarjeta o en efectivo</b></div>
-        <p>
-            Con MercadoLiebreCash tenés cuotas sin
-            interés con tarjeta o efectivo en puntos depago. 
-            ¡Y siempre es seguro!
-        </p>
-        <i id= "icons"class="fas fa-gift"></i>
-        <div><b>Envio gratis desde los $ 2.500</b></div>
-        <p>
-            Solo por estar registrado en MercadoLiebre tenés envios gratis
-            en miles de productos. Es un beneficio de MercadoPuntos.
-        </p>
-        <i id="icons" class="fas fa-user-shield"></i>
-        <div><b>Seguridad de principio a fin</b></div>
-        <p>
-            ¿No te gusta? ¡Devolvelo! En MercadoLiebre no hay nada que no puedas hacer
-            porque estás siempre protegid@.
-        </p>
-        <br>
-        <div id="copyright"><b>Copyright © 1999-2020 MercadoLiebre S.R.L.</b></div>
+    <div><b>Pagá con tarjeta o en efectivo</b></div>
+    <p>
+        Con MercadoLiebreCash tenés cuotas sin
+        interés con tarjeta o efectivo en puntos depago. 
+        ¡Y siempre es seguro!
+    </p>
+</section>
+<section>
+    <i id= "icons"class="fas fa-gift"></i>
+    <div><b>Envio gratis desde los $ 2.500</b></div>
+    <p>
+        Solo por estar registrado en MercadoLiebre tenés envios gratis
+        en miles de productos. Es un beneficio de MercadoPuntos.
+    </p>
+</section>
+<section>
+    <i id="icons" class="fas fa-user-shield"></i>
+    <div><b>Seguridad de principio a fin</b></div>
+    <p>
+        ¿No te gusta? ¡Devolvelo! En MercadoLiebre no hay nada que no puedas hacer
+        porque estás siempre protegid@.
+    </p>
+</section>
+</article>
+    <br>
+    <div id="copyright"><b>Copyright © 1999-2020 MercadoLiebre S.R.L.</b></div>
 </footer>
 </html>
