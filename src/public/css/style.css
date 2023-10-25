@@ -181,7 +181,7 @@
 
 .product_img{
     width: 100%; 
-    height:100%;
+    
 }
 
 .banner{
@@ -360,6 +360,7 @@ main.register form .reset {
   }
   main section article{
     width: 43%;
+    
     transition: box-shadow 300ms;
     cursor: pointer;
   }
@@ -373,7 +374,8 @@ main.register form .reset {
     transform: rotate(-90deg);
   }
   .products {
-    
+    display: flex;
+    flex-wrap: wrap;
   }
   header #logo {
     width: 33%;
